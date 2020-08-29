@@ -1,0 +1,47 @@
+{
+  "name": "@jianghe/sand-editor-ui",
+  "version": "1.0.0",
+  "private": false,
+  "description": "基于 @jianghe/slate 的富文本编辑器的 UI 组件",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "jianghe",
+      "email": "573748150jh@163.com"
+    }
+  ],
+  "main": "esm/index.js",
+  "keywords": [
+    "sand",
+    "sand-editor",
+    "sand-editor-ui",
+    "editor",
+    "slate",
+    "slate-react"
+  ],
+  "files": [
+    "esm"
+  ],
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/372623460jh/sand-editor.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "peerDependencies": {
+    "antd": "^3.26.18",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "antd": "^3.26.18"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "prop-types": "^15.7.2",
+    "tinycolor2": "^1.4.1"
+  }
+}

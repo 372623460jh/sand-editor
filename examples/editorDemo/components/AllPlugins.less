@@ -1,0 +1,58 @@
+.se-editor-container {
+  .se-editor {
+    line-height: 2em;
+    font-size: 16px;
+    // 解决英文单词换行问题
+    word-wrap: break-word;
+    box-sizing: border-box;
+    position: relative;
+
+    h2 {
+      font-size: 24px;
+      padding: 7px 0;
+      margin: 20px 0 7px 0;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    ol {
+      display: block;
+      list-style-type: decimal;
+      padding-inline-start: 20px;
+      box-sizing: border-box;
+
+      li {
+        display: list-item;
+        list-style-type: decimal;
+        box-sizing: border-box;
+        text-align: -webkit-match-parent;
+      }
+    }
+
+    ul {
+      display: block;
+      list-style-type: disc;
+      padding-inline-start: 20px;
+      box-sizing: border-box;
+
+      li {
+        display: list-item;
+        list-style-type: disc;
+        box-sizing: border-box;
+        text-align: -webkit-match-parent;
+      }
+    }
+
+    p {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      line-height: 1.6em;
+      font-size: 16px;
+    }
+  }
+  .se-editor-body {
+    min-height: 500px;
+  }
+}

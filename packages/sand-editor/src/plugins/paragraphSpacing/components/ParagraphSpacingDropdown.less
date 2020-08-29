@@ -1,0 +1,37 @@
+.se-ps-dropdown-bottom,
+.se-ps-dropdown-top {
+  z-index: 1;
+
+  .se-dropdown-trigger-btn {
+    position: relative;
+    width: 50px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-size: 15px 15px;
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
+
+.se-ps-dropdown-bottom {
+  .se-dropdown-trigger-btn {
+    &::before {
+      top: 10px;
+      left: 9px;
+      background-image: url('https://gw.alipayobjects.com/mdn/rms_c791a4/afts/img/A*mmwUToMBgEcAAAAAAAAAAABkARQnAQ');
+    }
+  }
+}
+
+.se-ps-dropdown-top {
+  .se-dropdown-trigger-btn {
+    &::before {
+      top: 8px;
+      left: 9px;
+      background-image: url('https://gw.alipayobjects.com/mdn/rms_c791a4/afts/img/A*LBBrRK6-KyQAAAAAAAAAAABkARQnAQ');
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.se-link-editbar {
+  position: absolute;
+  padding: 4px 2px 4px 8px;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px;
+  background-color: #fff;
+
+  &-input {
+    border: none;
+    outline: none;
+    height: 32px;
+    vertical-align: bottom;
+    line-height: 32px;
+    width: 200px;
+
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  &-split {
+    width: 1px;
+    height: 20px;
+    line-height: 20px;
+    margin: 6px 4px;
+    border-left: 1px solid #e8e8e8;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+}

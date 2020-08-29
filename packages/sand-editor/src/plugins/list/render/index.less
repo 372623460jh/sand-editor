@@ -1,0 +1,58 @@
+.sand-editor-ol,
+.sand-editor-ul {
+  margin: 0 0 0 3px;
+  padding: 0;
+
+  .sand-editor-li {
+    white-space: normal;
+    margin-left: 23px;
+  }
+}
+
+.sand-editor-ol[data-level='0'],
+.sand-editor-ol[data-level='3'],
+.sand-editor-ol[data-level='6'] {
+  .sand-editor-li {
+    list-style-type: decimal;
+  }
+}
+
+.sand-editor-ol[data-level='1'],
+.sand-editor-ol[data-level='4'],
+.sand-editor-ol[data-level='7'] {
+  .sand-editor-li {
+    list-style-type: lower-alpha;
+  }
+}
+
+.sand-editor-ol[data-level='2'],
+.sand-editor-ol[data-level='5'],
+.sand-editor-ol[data-level='8'] {
+  .sand-editor-li {
+    list-style-type: lower-roman;
+  }
+}
+
+.sand-editor-ul[data-level='0'],
+.sand-editor-ul[data-level='3'],
+.sand-editor-ul[data-level='6'] {
+  .sand-editor-li {
+    list-style-type: disc;
+  }
+}
+
+.sand-editor-ul[data-level='1'],
+.sand-editor-ul[data-level='4'],
+.sand-editor-ul[data-level='7'] {
+  .sand-editor-li {
+    list-style-type: circle;
+  }
+}
+
+.sand-editor-ul[data-level='2'],
+.sand-editor-ul[data-level='5'],
+.sand-editor-ul[data-level='8'] {
+  .sand-editor-li {
+    list-style-type: square;
+  }
+}

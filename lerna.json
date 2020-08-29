@@ -1,0 +1,18 @@
+{
+  "lerna": "2.11.0",
+  "packages": ["packages/sand-editor", "packages/sand-editor-ui"],
+  "command": {
+    "version": {
+      "conventionalCommits": true
+    },
+    "publish": {
+      "npmClient": "npm",
+      "registry": "https://npm.pkg.github.com",
+      "verifyRegistry": false,
+      "verifyAccess": false,
+      "allowBranch": ["master"]
+    }
+  },
+  "version": "independent",
+  "npmClient": "npm"
+}

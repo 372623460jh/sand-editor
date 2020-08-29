@@ -1,0 +1,376 @@
+// stylelint-disable
+@import '../style/variables';
+
+// sand-editor Icon
+@font-face {
+  font-family: 'sand-icon';
+  src: url('//at.alicdn.com/t/font_943843_7tukfhjr75o.eot');
+  src: url('//at.alicdn.com/t/font_943843_7tukfhjr75o.eot?#iefix')
+      format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_943843_7tukfhjr75o.woff') format('woff'),
+    url('//at.alicdn.com/t/font_943843_7tukfhjr75o.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_943843_7tukfhjr75o.svg#iconfont') format('svg');
+}
+
+@font-face {
+  font-family: 'Chinese Quote';
+  src: local('PingFang SC'), local('SimSun');
+  unicode-range: U+2018, U+2019, U+201c, U+201d;
+}
+
+@font-face {
+  font-family: 'Tahoma For Number';
+  src: local('Tahoma');
+  unicode-range: U+30-39;
+}
+
+@icon-cls-prefix: ~'@{clsPrefix}-icon';
+
+.@{icon-cls-prefix} {
+  display: inline-block;
+  font-style: normal;
+  font-size: 16px;
+  vertical-align: baseline;
+  text-align: center;
+  text-transform: none;
+  line-height: 1;
+  text-rendering: auto;
+}
+
+.@{icon-cls-prefix}:before {
+  display: block;
+  font-family: 'sand-icon' !important;
+}
+
+.@{icon-cls-prefix}-svg {
+  width: 16px;
+  height: 16px;
+}
+
+.@{icon-cls-prefix}-h1:before {
+  content: '\E610';
+}
+
+.@{icon-cls-prefix}-h2:before {
+  content: '\E611';
+}
+
+.@{icon-cls-prefix}-h3:before {
+  content: '\E60F';
+}
+
+.@{icon-cls-prefix}-h4:before {
+  content: '\E60C';
+}
+
+.@{icon-cls-prefix}-h5:before {
+  content: '\E60D';
+}
+
+.@{icon-cls-prefix}-h6:before {
+  content: '\E60E';
+}
+
+.@{icon-cls-prefix}-bold:before {
+  content: '\EA46';
+}
+
+.@{icon-cls-prefix}-underline:before {
+  content: '\EA45';
+}
+
+.@{icon-cls-prefix}-code:before {
+  content: '\EA49';
+}
+
+.@{icon-cls-prefix}-italic:before {
+  content: '\EA44';
+}
+
+.@{icon-cls-prefix}-strikethrough:before {
+  content: '\EA47';
+}
+
+.@{icon-cls-prefix}-sub:before {
+  content: '\EA4B';
+}
+
+.@{icon-cls-prefix}-sup:before {
+  content: '\EA4A';
+}
+
+.@{icon-cls-prefix}-moremark:before {
+  content: '\EA48';
+}
+
+.@{icon-cls-prefix}-link:before {
+  content: '\EA58';
+}
+
+.@{icon-cls-prefix}-emoji:before {
+  content: '\EA79';
+}
+
+.@{icon-cls-prefix}-ordered-list:before {
+  content: '\EA53';
+}
+
+.@{icon-cls-prefix}-unordered-list:before {
+  content: '\EA52';
+}
+
+.@{icon-cls-prefix}-todo-list:before {
+  content: '\EA56';
+}
+
+.@{icon-cls-prefix}-quote:before {
+  content: '\EA57';
+}
+
+.@{icon-cls-prefix}-hr:before {
+  content: '\EA59';
+}
+
+.@{icon-cls-prefix}-align-left:before {
+  content: '\EA4E';
+}
+
+.@{icon-cls-prefix}-align-center:before {
+  content: '\EA4F';
+}
+
+.@{icon-cls-prefix}-align-right:before {
+  content: '\EA50';
+}
+
+.@{icon-cls-prefix}-align-justify:before {
+  content: '\EA51';
+}
+
+.@{icon-cls-prefix}-top:before {
+  content: '\EA82';
+}
+
+.@{icon-cls-prefix}-bottom:before {
+  content: '\EA81';
+}
+
+.@{icon-cls-prefix}-middle:before {
+  content: '\EA80';
+}
+
+.@{icon-cls-prefix}-image:before {
+  content: '\EA78';
+}
+
+.@{icon-cls-prefix}-rotate-left:before {
+  content: '\EA71';
+}
+
+.@{icon-cls-prefix}-rotate-right:before {
+  content: '\EA70';
+}
+
+.@{icon-cls-prefix}-preferences:before {
+  content: '\E810';
+}
+
+.@{icon-cls-prefix}-indent-left:before {
+  content: '\EA54';
+}
+
+.@{icon-cls-prefix}-indent-right:before {
+  content: '\EA55';
+}
+
+.@{icon-cls-prefix}-arrow-up:before {
+  content: '\EA1B';
+}
+
+.@{icon-cls-prefix}-arrow-down:before {
+  content: '\EA1A';
+}
+
+.@{icon-cls-prefix}-arrow-left:before {
+  content: '\EA1F';
+}
+
+.@{icon-cls-prefix}-arrow-right:before {
+  content: '\EA1E';
+}
+
+.@{icon-cls-prefix}-insert-sibling:before {
+  content: '\EA72';
+}
+
+.@{icon-cls-prefix}-insert-child:before {
+  content: '\EA73';
+}
+
+.@{icon-cls-prefix}-expand-subtree:before {
+  content: '\EA74';
+}
+
+.@{icon-cls-prefix}-collapse-subtree:before {
+  content: '\EA75';
+}
+
+.@{icon-cls-prefix}-table-merge-cell:before {
+  content: '\EA6A';
+}
+
+.@{icon-cls-prefix}-table-split-cell:before {
+  content: '\EA6B';
+}
+
+.@{icon-cls-prefix}-table-clear:before {
+  content: '\EA64';
+}
+
+.@{icon-cls-prefix}-table-remove-col:before {
+  content: '\EA67';
+}
+
+.@{icon-cls-prefix}-table-remove-row:before {
+  content: '\EA66';
+}
+
+.@{icon-cls-prefix}-table-cut:before {
+  content: '\EA65';
+}
+
+.@{icon-cls-prefix}-table-paste:before {
+  content: '\EA62';
+}
+
+.@{icon-cls-prefix}-table-copy:before {
+  content: '\EA61';
+}
+
+.@{icon-cls-prefix}-table-insert-col-left:before {
+  content: '\EA60';
+}
+
+.@{icon-cls-prefix}-table-insert-col-right:before {
+  content: '\EA5F';
+}
+
+.@{icon-cls-prefix}-table-insert-row-up:before {
+  content: '\EA5D';
+}
+
+.@{icon-cls-prefix}-table-insert-row-down:before {
+  content: '\EA5E';
+}
+
+.@{icon-cls-prefix}-table-remove-table:before {
+  content: '\EA63';
+}
+
+.@{icon-cls-prefix}-redo:before {
+  content: '\EA40';
+}
+
+.@{icon-cls-prefix}-undo:before {
+  content: '\EA41';
+}
+
+.@{icon-cls-prefix}-clean:before {
+  content: '\EA43';
+}
+
+.@{icon-cls-prefix}-paintformat:before {
+  content: '\EA42';
+}
+
+.@{icon-cls-prefix}-close:before {
+  content: '\E72D';
+}
+
+.@{icon-cls-prefix}-save:before {
+  content: '\EA3F';
+}
+
+.@{icon-cls-prefix}-edit:before {
+  content: '\EA6C';
+}
+
+.@{icon-cls-prefix}-copy:before {
+  content: '\EA61';
+}
+
+.@{icon-cls-prefix}-delete:before {
+  content: '\EA63';
+}
+
+.@{icon-cls-prefix}-openlink:before {
+  content: '\EA76';
+}
+
+.@{icon-cls-prefix}-drag:before {
+  content: '\EA68';
+}
+
+.@{icon-cls-prefix}-zoom-in:before {
+  content: '\EA7E';
+}
+
+.@{icon-cls-prefix}-zoom-out:before {
+  content: '\EA7F';
+}
+
+.@{icon-cls-prefix}-attachment:before {
+  content: '\EA7A';
+}
+
+.@{icon-cls-prefix}-download:before {
+  content: '\EA6E';
+}
+
+.@{icon-cls-prefix}-upload:before {
+  content: '\EA7D';
+}
+
+.@{icon-cls-prefix}-preview:before {
+  content: '\EA6D';
+}
+
+.@{icon-cls-prefix}-full-screen:before {
+  content: '\EA7C';
+}
+
+.@{icon-cls-prefix}-toc:before {
+  content: '\EA5C';
+}
+
+.@{icon-cls-prefix}-question:before {
+  content: '\E81D';
+}
+
+.@{icon-cls-prefix}-more:before {
+  content: '\E60B';
+}
+
+.@{icon-cls-prefix}-lock:before {
+  content: '\E86A';
+}
+
+.@{icon-cls-prefix}-unlock:before {
+  content: '\E86B';
+}
+
+.@{icon-cls-prefix}-embedded-preview:before {
+  content: '\E686';
+}
+
+.@{icon-cls-prefix}-compact-display:before {
+  content: '\E684';
+}
+
+.@{icon-cls-prefix}-loading:before {
+  content: '\E64D';
+}
+
+.@{icon-cls-prefix}-warning:before {
+  content: '\E7DF';
+}

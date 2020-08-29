@@ -1,0 +1,63 @@
+{
+  "name": "@jianghe/sand-editor",
+  "version": "1.0.0",
+  "private": false,
+  "description": "基于 @jianghe/slate 的富文本编辑器",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "jianghe",
+      "email": "573748150jh@163.com"
+    }
+  ],
+  "main": "esm/index.js",
+  "keywords": [
+    "sand",
+    "sand-editor",
+    "editor",
+    "slate",
+    "slate-react"
+  ],
+  "files": [
+    "esm",
+    "slate.js",
+    "slate-react.js",
+    "*.d.ts"
+  ],
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/372623460jh/sand-editor.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "peerDependencies": {
+    "antd": "^3.26.18",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "antd": "^3.26.18",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "immutable": "~4.0.0-rc.12",
+    "@jianghe/slate-hyperscript": "^0.13.9-3"
+  },
+  "dependencies": {
+    "@types/slate": "^0.47.7",
+    "@types/slate-react": "^0.22.9",
+    "classnames": "^2.2.6",
+    "debug": "^4.1.1",
+    "immutable": "~4.0.0-rc.12",
+    "is-hotkey": "^0.1.6",
+    "prop-types": "^15.7.2",
+    "@jianghe/slate": "^0.47.9-3",
+    "@jianghe/slate-react": "^0.22.10-3",
+    "@jianghe/sand-editor-ui": "^1.0.0",
+    "@jianghe/slate-dev-environment": "^0.2.3-3",
+    "@jianghe/slate-html-serializer": "^0.8.11-3",
+    "ssr-window": "^1.0.1"
+  }
+}

@@ -1,0 +1,16 @@
+/yarn.lock
+/coverage
+node_modules
+esm
+cjs
+dist
+dist-docs
+
+# OS files.
+.DS_Store
+.idea/
+.vscode/
+.git
+*.log
+.umi
+.umi-production

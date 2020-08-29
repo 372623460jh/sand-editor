@@ -1,0 +1,19 @@
+**/*.svg
+/yarn.lock
+cjs
+esm
+node_modules
+coverage
+CHANGELOG.backup.md
+dist
+dist-docs
+
+# OS files.
+.DS_Store
+.idea/
+.vscode/
+.git
+*.log
+.umi
+.umi-production
+./packages/sand-editor-ui/src/icon/Icon.less

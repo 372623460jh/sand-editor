@@ -1,0 +1,26 @@
+@emojipanel-cls-prefix: ~'sand-emoji-panel';
+
+.@{emojipanel-cls-prefix} {
+  padding: 5px 10px;
+
+  &-emoji-row {
+    height: 32px;
+    display: inline-flex;
+  }
+
+  &-emoji-item {
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+    line-height: 22px;
+    font-size: 18px;
+    border-radius: 3px 3px;
+    border: 1px solid transparent;
+    display: inline;
+
+    &:hover {
+      border-color: #dfdfdf;
+      cursor: pointer;
+    }
+  }
+}

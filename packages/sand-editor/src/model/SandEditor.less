@@ -1,0 +1,35 @@
+@editorClsPrefix: sand-editor;
+
+.@{editorClsPrefix} {
+  padding: 1em 0;
+  font-size: 16px;
+  z-index: 1;
+
+  ::selection {
+    background: #1ba2e333;
+    color: inherit;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  // placeholder 样式
+  span[contenteditable='false'] {
+    vertical-align: initial !important;
+  }
+
+  blockquote {
+    border-left: 3px solid #f2f2f2;
+    padding-left: 5px;
+  }
+
+  :not(pre) > code {
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 3px;
+    font-family: monospace;
+    font-size: 85%;
+    background-color: #eee;
+  }
+}

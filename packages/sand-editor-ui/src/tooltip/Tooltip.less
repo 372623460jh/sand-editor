@@ -1,0 +1,12 @@
+@import '../style/variables';
+
+@tooltip-cls-prefix: ~'@{clsPrefix}-tooltip';
+
+.@{tooltip-cls-prefix} {
+  // 加权，待优化
+  html & .ant-tooltip-inner {
+    min-height: 26px;
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+}

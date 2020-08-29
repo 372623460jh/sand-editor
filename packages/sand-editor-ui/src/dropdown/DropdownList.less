@@ -1,0 +1,53 @@
+@import '../style/variables';
+
+@dropdown-list-cls-prefix: ~'@{clsPrefix}-dropdown-list';
+
+.@{dropdown-list-cls-prefix} {
+  &,
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  a {
+    display: block;
+    padding: 8px 12px;
+    line-height: 1.6;
+    color: #666;
+
+    &:hover {
+      background-color: #f5f5f5;
+    }
+  }
+
+  &-item {
+    position: relative;
+
+    &-icon {
+      margin-right: 8px;
+      vertical-align: -0.12em;
+    }
+  }
+
+  // 选中
+  &-item-checked {
+    a {
+      cursor: not-allowed;
+      pointer-events: none;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 8px;
+        margin-top: -7px;
+        width: 14px;
+        height: 14px;
+        display: block;
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTRweCIgaGVpZ2h0PSIxNHB4IiB2aWV3Qm94PSIwIDAgMTQgMTQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUyLjQgKDY3Mzc4KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5VbnRpdGxlZDwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIG9wYWNpdHk9IjAuNDUiPgogICAgICAgIDxnIGlkPSJjaGVjayIgZmlsbD0iIzAwMDAwMCI+CiAgICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGUiIG9wYWNpdHk9IjAiIHg9IjAiIHk9IjAiIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNCI+PC9yZWN0PgogICAgICAgICAgICA8cGF0aCBkPSJNMTIuNDY4NzUsMi41OTc2NTYyNSBMMTEuNTEzMDg1OSwyLjU5NzY1NjI1IEMxMS4zNzkxMDE2LDIuNTk3NjU2MjUgMTEuMjUxOTUzMSwyLjY1OTE3OTY5IDExLjE2OTkyMTksMi43NjQ0NTMxMiBMNS41MzMwMDc4MSw5LjkwNTI3MzQ0IEwyLjgzMDA3ODEyLDYuNDgwNDY4NzUgQzIuNzQ2Njc5NjksNi4zNzUxOTUzMSAyLjYyMDg5ODQ0LDYuMzEzNjcxODcgMi40ODY5MTQwNiw2LjMxMzY3MTg3IEwxLjUzMTI1LDYuMzEzNjcxODcgQzEuNDM5NjQ4NDQsNi4zMTM2NzE4NyAxLjM4OTA2MjUsNi40MTg5NDUzMSAxLjQ0NTExNzE5LDYuNDkwMDM5MDYgTDUuMTg5ODQzNzUsMTEuMjM0MTc5NyBDNS4zNjQ4NDM3NSwxMS40NTU2NjQxIDUuNzAxMTcxODcsMTEuNDU1NjY0MSA1Ljg3NzUzOTA2LDExLjIzNDE3OTcgTDEyLjU1NDg4MjgsMi43NzI2NTYyNSBDMTIuNjEwOTM3NSwyLjcwMjkyOTY5IDEyLjU2MDM1MTYsMi41OTc2NTYyNSAxMi40Njg3NSwyLjU5NzY1NjI1IFoiIGlkPSJQYXRoIj48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=);
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}

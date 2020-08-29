@@ -1,0 +1,59 @@
+{
+  "name": "sand-editor",
+  "version": "1.0.0",
+  "description": "sand富文本编辑器组件",
+  "author": "jianghe",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "init": "npm run clean && npm i && npm run bootstrap",
+    "clean": "rm -rf ./node_modules ./packages/*/{dist,esm,cjs,node_modules} ./.umi ./dist ./dist-docs ./package-lock.json ./coverage && lerna clean --yes ",
+    "bootstrap": "lerna bootstrap --npm-client npm --hoist && npm run build",
+    "build": "sand-build build -t lib -e development -l",
+    "build:watch": "sand-build build -t lib -e development -l -w",
+    "build:production": "sand-build build -t lib -e production -l",
+    "build:demo": "sand-build build -t demo -e production",
+    "build:docs": "dumi build",
+    "server": "sand-build start -t demo",
+    "start": "npm-run-all --parallel --print-label build:watch server",
+    "start:docs": "dumi dev",
+    "publish": "npm run build:production && lerna publish",
+    "lint": "eslint ./packages ./examples --ext .jsx,.js,.ts,.tsx",
+    "lint:fix": "npm run lint -- --fix",
+    "lint:style": "stylelint \"packages/**/*.less\" \"examples/**/*.less\" --syntax less",
+    "lint:style:fix": "npm run lint:style -- --fix",
+    "test": "jest",
+    "ci": "npm run lint:fix && npm run lint:style:fix && npm run lint && npm run lint:style && npm run test"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run ci",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^9.1.2",
+    "@types/jest": "^26.0.10",
+    "@types/react": "^16.9.48",
+    "@types/react-dom": "^16.9.8",
+    "@types/webpack-env": "^1.15.2",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-typescript": "^7.10.4",
+    "eslint": "^7.7.0",
+    "lerna": "2.11.0",
+    "npm-run-all": "^4.1.5",
+    "husky": "^4.2.5",
+    "stylelint": "^13.6.1",
+    "jest": "^26.4.2",
+    "dumi": "^1.0.34",
+    "@jianghe/sand-build": "^1.2.3-12",
+    "@jianghe/sand-lint": "^1.2.3-12"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "antd": "^3.26.18"
+  },
+  "license": "MIT"
+}
