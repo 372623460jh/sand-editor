@@ -42,13 +42,14 @@
     "antd": "^3.26.18",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "@types/slate": "^0.47.7",
+    "@types/slate-react": "^0.22.9",
     "immutable": "~4.0.0-rc.12",
     "@jianghe/slate-hyperscript": "^0.13.9-3"
   },
   "dependencies": {
-    "@types/slate": "^0.47.7",
-    "@types/slate-react": "^0.22.9",
     "classnames": "^2.2.6",
+    "babel-runtime": "^6.26.0",
     "debug": "^4.1.1",
     "immutable": "~4.0.0-rc.12",
     "is-hotkey": "^0.1.6",
