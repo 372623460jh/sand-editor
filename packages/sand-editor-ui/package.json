@@ -20,7 +20,8 @@
     "slate-react"
   ],
   "files": [
-    "esm"
+    "esm",
+    "cjs"
   ],
   "scripts": {},
   "repository": {

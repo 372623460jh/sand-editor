@@ -20,6 +20,7 @@
   ],
   "files": [
     "esm",
+    "cjs",
     "slate.js",
     "slate-react.js",
     "*.d.ts"
@@ -50,7 +51,7 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "babel-runtime": "^6.26.0",
-    "debug": "^4.1.1",
+    "debug": "^4.2.0",
     "immutable": "~4.0.0-rc.12",
     "is-hotkey": "^0.1.6",
     "prop-types": "^15.7.2",
