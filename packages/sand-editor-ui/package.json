@@ -1,6 +1,6 @@
 {
   "name": "@jianghe/sand-editor-ui",
-  "version": "1.0.0",
+  "version": "1.0.1-0",
   "private": false,
   "description": "基于 @jianghe/slate 的富文本编辑器的 UI 组件",
   "license": "MIT",
